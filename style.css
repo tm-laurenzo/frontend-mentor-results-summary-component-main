@@ -121,24 +121,76 @@ body {
 .subject-field:nth-child(1) {
   background-color: hsla(0, 100%, 67%, 0.2);
 }
-.subject-field:nth-child(1) .badge b {
+.subject-field:nth-child(1) .subject {
   color: var(--Light-red);
 }
 .subject-field:nth-child(2) {
   background-color: hsla(39, 100%, 56%, 0.2);
 }
-.subject-field:nth-child(2) .badge b {
+.subject-field:nth-child(2) .subject {
   color: var(--Orangey-yellow);
 }
 .subject-field:nth-child(3) {
   background-color: hsla(166, 100%, 37%, 0.2);
 }
-.subject-field:nth-child(3) .badge b {
+.subject-field:nth-child(3) .subject {
   color: var(--Green-teal);
 }
 .subject-field:nth-child(4) {
   background-color: hsla(234, 85%, 45%, 0.2);
 }
-.subject-field:nth-child(4) .badge b {
+.subject-field:nth-child(4) .subject {
   color: var(--Cobalt-blue);
+}
+.subject-field .subject-score {
+  color: var(--Dark-gray-blue);
+}
+.subject-field .max-score {
+  color: gray;
+}
+
+.subject {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn {
+  margin-top: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  background: var(--Dark-gray-blue);
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+}
+.btn:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue-background),
+    var(--Light-royal-blue-background)
+  );
+}
+@media screen and (max-width: 650px) {
+  body {
+    align-items: flex-start;
+    background-color: white;
+  }
+  .card {
+    box-shadow: none;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .result {
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+  }
+  .result .info {
+    width: 250px;
+  }
+  .summary {
+    width: 100%;
+  }
 }
