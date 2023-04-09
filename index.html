@@ -7,6 +7,12 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
   <title>Frontend Mentor | Results summary component</title>
 
@@ -30,14 +36,13 @@
 
     <dv class="card-container">
       <section class="result">
-        <h2>Your Result</h2>
+        <h2 class="result-header">Your Result</h2>
         <p class="grading">
           <span class="actuaal-score">76</span>
-          <span class="max-scorte"> of 100</span>
+          <span class="max-score"> of 100</span>
         </p>
-
-        <h3>Great</h3>
-        <p>
+        <h3 class="grade-range">Great</h3>
+        <p class="comment">
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </section>
@@ -56,7 +61,6 @@
           <span class="subject">Memory</span>
           <span class="subject-score">92 / 100</span>
         </div>
-
 
         <div class="subject-field">
           <span class="subject">Verbal</span>
